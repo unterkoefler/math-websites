@@ -1,0 +1,2 @@
+This directory contains the files related to our first project in the high school course Advanced Topics in Math. I worked with Lucas Kensinger on all but the last of these projects. For this particular project, we read Book I of Euclid's Elements and created a website that would be engaging for Middle and High School students while explaining some of the most important results of Euclid's Elements. 
+
