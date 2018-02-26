@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lorentz Transformations</title>
+		<h1>Einstein's Theory of Special Relativity</h1>
+		<h2>And the Lorentz Transformations!!</h2>
+		<h5>Brought to you by Lucas Kensinger and Willy Unterkoefler</h5>
+		<script type="text/javascript"
+			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		<style type="text/css"> 
+            table { 
+                background-color: white;
+                position: fixed;
+                top: 30px;
+                right: 10px;
+                width: 175px;
+            } 
+            p { 
+                margin: 0px 200px 0px 0px;
+                line-height: 145%; 
+            } 
+		</style>
+	</head>
+	<body>
+		<table border="1">
+			<th>Table of Contents</th>
+			<tr>
+				<td>
+					<ol>
+						<a href="#sec1">
+							<li>Introduction</li>
+						</a>
+						<a href="#sec2">
+							<li>The Principle of Relativity</li>
+						</a>
+						<a href="#sec3">
+							<li>Constant Speed of Light</li>
+						</a>
+						<a href="#sec4">
+							<li>The Invariance of the Interval</li>
+						</a>
+						<a href="#sec5">
+							<li>The Derivation of the Lorentz Transformation</li>
+						</a>
+						<ol>
+							<a href="#subsec1">
+								<li>Part 1</li>
+							</a>
+							<a href="#subsec2">
+								<li>Part 2</li>
+							</a>
+						</ol>
+						<a href="#sec6">
+							<li>Conclusion</li>
+						</a>
+					</ol>
+				</td>
+			</tr>
+		</table>
+		<div style="background-color:#ffcc99">
+			<h2 id="sec1">Introduction</h2>
+            
+			<p>Albert Einstein is well known as one of the smartest people to ever live. This is partially due to his contributions to special and general relativity, two fields of physics that are known to be very confusing and mind-boggling for most. To add to this feat, he managed to come up with his theories without any heavy duty lab equipment or a complex mathematical background. He did it all just by thinking really hard. Fortunately, you can learn an important part of Einstein's confusing concepts without all of the intense thinking, right here! We will teach you how to derive the Lorentz Transformation, an algebraic equation that allows you to predict time and space dilation based on the relative speeds of objects.</p>
+            
+		</div>
+		<div style="background-color:#ffff99">
+			<h2 id="sec2">The Principle of Relativity</h2>
+            
+			<p>The Principle of Relativity is a crucial law of relativistic physics, as well as all other branches of physics. Say we have two people in space, Einstein and his evil twin, Alberto, one moving to the right and the other moving to the left.</p>
+			<img src="http://s9.postimg.org/8m8viw367/Einstein.png" height="250">
+			<img src="http://s29.postimg.org/gjcwlozd3/Arrow.png" width="100"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<img src="http://s22.postimg.org/4khub0do1/Arrowleft.png" width="100">
+			<img src="http://s16.postimg.org/ipw3noudh/Alberto.png" height="250">
+			<p> For Einstein, it seems that he is standing still, while Alberto
+				is moving to the left. 
+			</p>
+			<img src="http://s9.postimg.org/8m8viw367/Einstein.png" height="250"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<img src="http://s22.postimg.org/4khub0do1/Arrowleft.png" width="100">
+			<img src="http://s29.postimg.org/rsj43b2fb/Alberto.png" height="250">
+			<p> For Alberto, it seems as if he is standing still while Einstein
+				is moving to the right.</p>
+				<img src="http://s9.postimg.org/8m8viw367/Einstein.png" height="250">
+				<img src="http://s29.postimg.org/gjcwlozd3/Arrow.png" width="100"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<img src="http://s29.postimg.org/rsj43b2fb/Alberto.png" height="250">
+			
+			<p>The principle of relativity states that motion is relative. While we may seem to be standing still on Earth, we are still moving with respect to the sun, or the international space station, or another planet 500 light years away.This means that the motion of one thing depends on that of another, and objects that move may be at rest with respect to others and resting objects may be moving with respect to others. There is no way to be at absolute rest or in absolute motion. No matter what, you will be moving relative to something. <b> In addition to this, the principle of relativity states that no matter how fast you may be moving relative to someone or something else, the laws of physics still apply in the exact same way.</b> This means that there is no experiment that can be done to determine whether you are moving or in a state of "absolute rest" (which is impossible). </p>
+		</div>
+        
+		<div style="background-color:#99ff99">
+			<h2 id="sec3">Constant Speed of Light</h2>
+            
+			<p>Although it souds strange and counter-intuitive, the speed of light holds the same value, 299,792,458 m/s (186,000 mph), relative to everything! For example, if you were standing still and turned on a flashlight, the light from the flashlight would move at 299,792,458 m/s. If you were driving a car at 25 m/s (56 mph) and turned on the headlights, the light would still move at 299,792,458 m/s. Even if the car was moving at 100,000,000 m/s, the light from its headlights would still move at the speed of light, 299,792,458 m/s. This is a crucial concept in relativity and is the basis of the concepts discussed later.</p>
+		</div>
+        
+		<div style="background-color:#ccff99">
+			<h2 id="sec4">Invariance of the Interval</h2>
+			<p>Imagine that Einstein is in a laboratory on the surface of the Earth and Alberto is on a moving rocket, and each one has a laser pointer. If each one pointed his laser straight up at a mirror 1 meter above so that it would bounce back down, the path that Einstein's light travelled would be a straight line, straight up, then off of the mirror and straight back down.</p>
+			<img src="http://s18.postimg.org/cu4p4zhhl/arrow2.png" height="500" caption="Einstein's Light">
+            <p><i>Einstein's Light</i></p>
+            
+			<p> If Alberto shines his laser pointer at the mirror, the path of the light will be triangular because Alberto is moving sideways (relative to Einstein). The path of the light in this case will look like this: </p>
+			<img src="http://s28.postimg.org/vtu3t4k9p/Triangle.png">
+            <p><i>Alberto's Light</i></p>
+            
+			<p>Alberto's light path forms a triangle, which is very useful in deriving the Lorentz Transformation. The longest side of the right triangle, also known as the hypotenuse, is the direct path that the light travels. In the straight line path, this length is denoted t', while in the triangle it is t. The base of the line is denoted x', or x in the triangle, while the height in both cases is 1 meter. By using the Pythagorean Theorem (Proven <a href="../euclid/eucild3.html"> Here </a>) we know that 1<sup>2</sup> + x<sup>2</sup> = t<sup>2</sup> and 1<sup>2</sup> + x'<sup>2</sup> = t'<sup>2</sup>. If we subtract 1 from each side, we get x<sup>2</sup> = t<sup>2</sup> -1 and x'<sup>2</sup> = t'<sup>2</sup> -1. Then, by subtracting t<sup>2</sup> and t'<sup>2</sup>, we get x<sup>2</sup> - t<sup>2</sup> = -1 and x'<sup>2</sup> - t'<sup>2</sup>= -1. Because both equations are equal to -1, they must be equal to each other, so we get x<sup>2</sup> - t<sup>2</sup> = x'<sup>2</sup> - t'<sup>2</sup>. Because x'=0 (The base of a line is zero) t'<sup>2</sup> = x<sup>2</sup> - t<sup>2</sup>.
+			</p>
+		</div>
+        
+		<div>
+			<h2 id="sec5">Derivation of the Lorentz Transformation</h2>
+			<div style="background-color:#99b3ff">
+				<h3 id="subsec1">Part 1</h3>
+				<p>First, we are going derive the first two coefficients of the Lorentz Transformation. The entire Lorentz Transformation will be in the form of x = Ax' + Bt' and t = Bx' + At', but to simplify things we are going to let (t',x') be the coordinates in the rocket frame. In the rocket frame x' always equals zero. Also, for this derivation we are going to use &Beta;<sub>r</sub> to represent the speed one reference frame moves with respect to the other. For calculations use &Beta;<sub>r</sub> = v/c
+				</p>
+                
+				<p>(1) From the standard physics equation speed = distance over
+					time:</p>
+				<p>$$\frac{x}{t}= \beta_r$$</p>
+				<p>(2) Multiply both sides by t. </p>
+				<p>$$x = \beta_rt$$</p>
+				<p>(3) Square both sides</p>
+				<p>$$x^{2} = { \beta_r}^{2}t^{2}$$</p>
+				<p>(4) From the Invariance of the Interval, we have:</p>
+				<p>$$t^{2} - x^{2} = t'^{2} - x'^{2} = t'^{2}$$</p>
+				<p>
+					(5) Substitute equation (3) for x<sup>2</sup>
+				</p>
+				<p>$$t^{2} - { \beta_r}^{2}t^{2} = t'^{2}$$</p>
+				<p>
+					(6) Factor out t<sup>2</sup>
+				</p>
+				<p>$$t^{2}(1-{ \beta_r}^{2}) = t'^2$$</p>
+				<p>
+					(7) Divide both sides to isolate t<sup>2</sup>
+				</p>
+				<p>$$t^{2}= \frac{t'^2}{(1-{ \beta_r}^{2})}$$</p>
+				<p>(8) Take the square root of both sides to solve for t.</p>
+				<p>$$t= \frac{t'}{ \sqrt{(1-{ \beta_r}^{2})}}$$</p>
+				<p>(9)
+					Solve for x. Remember from equation (2) that x = &Beta;<sub>r</sub>
+					t
+				</p>
+				<p>$$x = \frac{\beta_rt'}{ \sqrt{(1-{ \beta_r}^{2})}}$$</p>
+			</div>
+            
+			<div style="background-color:#e699ff">
+				<h3 id="subsec2">Part 2</h3>
+				<p>So now we have succesfully derived the Lorentz Transformation to go from the rocket frame to the laboratory frame. But wait, you might object, what if x' was nonzero? Doesn't x depend on both t' and x'? Well, you would be right! For the second part of the Lorentz Transformation, we write that t = t'(1 - &Beta;<sub>r</sub><sup>2</sup>)<sup>(-1/2)</sup> + Ax' and x = &Beta;<sub>r</sub>t'(1 - &Beta;<sub>r</sub><sup>2</sup>)<sup>(-1/2)</sup>. Now we just solve for A and B and we are all done! :)
+				</p>
+                
+				<p>(1) From Part 1 and knowing that x and t depend on both x' and t':</p>
+				<p>$$t= \frac{t'}{ \sqrt{(1-{ \beta_r}^{2})}} + Ax'\\ x =
+					\frac{\beta_rt'}{ \sqrt{(1-{ \beta_r}^{2})}}+Bx'$$</p>
+				<p>(2) From the Invariance of the Interval:</p>
+				<p>$$t^{2} - x^{2} = t'^{2} - x'^{2}$$</p>
+				<p>(3) Substitute t and x from equation (1)</p>
+				<p>$$(\frac{t'}{ \sqrt{(1-{ \beta_r}^{2})}} + Ax')^{2} -
+					(\frac{\beta_rt'}{ \sqrt{(1-{ \beta_r}^{2})}}+Bx')^{2} = t'^{2} - x'^{2}$$</p>
+				<p> (4) Expand the two squared terms. Remember that (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></p>
+				<p>$$(\frac{t'^2}{1- \beta_r^{2}} + \frac{2Ax't'}{ \sqrt{1- \beta_r^{2}}} +A^2x'^2) - (\frac{\beta_r^2t'^2}{1- \beta_r^{2}} + \frac{2\beta_rBx't'}{ \sqrt{1- \beta_r^{2}}} +B^2x'^2) = t'^2 - x'^2$$</p>
+				<p>(5) Combine like terms</p>
+				<p>$$t'^2 + \frac{2(A-\beta_rB)}{ \sqrt{1-\beta_r^2}}x't' + (A^2 - B^2)x'^2 = t'^2 - x'^2$$</p>
+				<p>(6) Almost there! For the left side to simplify to equal the
+					right, 2 things must happen. 1. x't' must disappear so the second coefficient must equal 0.</p>
+				<p>$$A - \beta_rB=0\\A=\beta_rB$$</p>
+				<p>(7) And 2: The third coefficient must equal -1 to get (-1)x<sup>2</sup> on the right.</p>
+				<p>$$A^2-B^2 = -1\\B^2-A^2=1$$</p>
+				<p>(8) Now we solve the system of equations for A and B using equations (6) and (7). First subsitute &Beta;<sub>r</sub> B for A.</p>
+                <p>$$B^2-(\beta_rB)^2=1$$</p>
+				<p>9) Factor out B<sup>2</sup></p>
+				<p>$$B^2(1 -\beta_r^2) =1$$</p>
+				<p>(10) Divide through to isolate B<sup>2</sup> and take the square root to solve for B.</p>
+				<p>$$B= \frac{1}{ \sqrt{(1 -\beta_r^2)}}$$</p>
+				<p>(11) Use equation (6) to solve for A.</p>
+				<p>$$A= \frac{\beta_r}{ \sqrt{(1 -\beta_r^2)}}$$</p>
+				<p>(12) That's It! The Lorentz Transformation:</p>
+				<p>$$t= \frac{t'}{ \sqrt{(1-{ \beta_r}^{2})}} + \frac{\beta_rx'}{
+					\sqrt{(1-{ \beta_r}^{2})}}\\ x = \frac{\beta_rt'}{ \sqrt{(1-{
+					\beta_r}^{2})}}+ \frac{x'}{ \sqrt{(1-{ \beta_r}^{2})}}$$ 
+			</div>
+		</div>
+        
+		<div style="background-color:#ff99e5">
+			<h2 id="sec6">Conclusion</h2>
+			<p> Now Albert and Alberto Einstein can communicate and talk about the same events no matter how fast Alberto is moving in his rocket ship! The Lorentz Transformation allows us to understand how spacetime changes based on relative velocities. We can convert (x, t) coordinates from one reference frame to any other!</p>
+			<p>Another fascinating result of the Lorentz Transformation is that it gives us the universal speed limit. If we let &Beta;<sub>r</sub> go to 1, or equivalently let v go to c<br>(remember &Beta;<sub>r</sub> = v/c), the denominator of the Lorentz equations goes to 0, so the (x,t) coordinates will go to infinity! This means that c is the maximum possible speed for anything. If v > c, we are forced to take the square root of a negative number, which, of course, is impossible.</p>
+			<p> Also to note are the ideas of time dilation and length contraction. Simply put, as you move at faster speeds, your clocks seem to be slower and your meter sticks actually get shorter. See if you can prove this by using the Lorentz Transformation on your own!</p>
+			<p>Do you think you are ready to apply your new knowledge of Special Relativity? Take the quiz:<a href="einstein-quiz.html">Here</a></p>
+		</div>
+        
+	</body>
+</html>
